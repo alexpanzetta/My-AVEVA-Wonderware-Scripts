@@ -38,7 +38,6 @@ Function Check-AvevaSupportedPatcheList {
         [string]$Source,
         [parameter(Mandatory)]
         [string]$SearchText
-        #You can specify wildcard characters (*, ?)
     )
     $Excel = New-Object -ComObject Excel.Application
     Try {
@@ -50,10 +49,8 @@ Function Check-AvevaSupportedPatcheList {
     }
     $Workbook = $Excel.Workbooks.Open($Source)
     ForEach ($Worksheet in @($Workbook.Sheets)) {
-        # Find Method https://msdn.microsoft.com/en-us/vba/excel-vba/articles/range-find-method-excel
-        $Found = $WorkSheet.Cells.Find($SearchText) #What
+        $Found = $WorkSheet.Cells.Find($SearchText)
         If ($Found) {
-            # Address Method https://msdn.microsoft.com/en-us/vba/excel-vba/articles/range-address-property-excel
             $rowStatus,$colStatus = $Found.Row,$Found.Column
             $Status = $Worksheet.Cells.Item($Found.Row,2).text
             if ($Status -ccontains "Supported") {
