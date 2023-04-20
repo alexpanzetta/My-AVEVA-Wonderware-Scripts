@@ -1,0 +1,1 @@
+﻿Invoke-Command -FilePath .\Fix-apacheLog4j_TA000032828.ps1 -ComputerName gr1,gr2,hist1

@@ -1,0 +1,5 @@
+populate the txt file with the computer names, one per line
+execute this file "Distribute-Mount-ASP2020R2SP1-ISO.PS1"
+
+Note:
+if there are any computers offline, then you will need to re-run this for those computers..
