@@ -1,7 +1,8 @@
 ﻿<#
 .DESCRIPTION
-    Adds folder exclusions to Microsoft Defender as in Tech Note #32662
+    Adds folder exclusions to Microsoft Defender as in Tech Notes #2865/32662
     Folder exclusion list available at:
+    https://softwaresupportsp.aveva.com/#/knowledgebase/details/tn2865
     https://softwaresupportsp.aveva.com/#/knowledgebase/details/tn000032662
 .AUTHOR
     Alex Panzetta
@@ -13,7 +14,12 @@
     DateCreated: April 2023
 #>
 
-ConfigDefender\Add-MpPreference -ExclusionPath "C:\ProgramData\ArchestrA\ and all subfolders"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\ProgramData\ArchestrA\"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files\ArchestrA\"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files\Common Files\ArchestrA\"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files\FactorySuite\"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\ProgramData\Wonderware\"
+ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files\Wonderware\"
 ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files\Common Files\ArchestrA\"
 ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files (x86)\ArchestrA\"
 ConfigDefender\Add-MpPreference -ExclusionPath "C:\Program Files (x86)\Common Files\ArchestrA\"
