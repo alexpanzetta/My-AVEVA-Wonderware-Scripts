@@ -1,7 +1,7 @@
 <#
     .DESCRIPTION
             Searches in the registry for InstallSource=E:\InstallFiles or F:\InstallFiles
-            and replaces 
+            and replaces it with updated sopurce files locations.
 
     .AUTHOR
             Alex Panzetta
