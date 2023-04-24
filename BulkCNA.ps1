@@ -13,7 +13,7 @@
     DateCreated: August 2021
 #>
 
-$ComputersFile = "C:\Temp\Sentinel_computers.txt"
+$ComputersFile = "C:\Temp\computers.txt"
 $cmdCNA = "C:\Program Files (x86)\common files\archestra\aaadminuser -u YourUsername -p YourPassword"
 
 foreach($Computer in Get-Content $ComputersFile) {
