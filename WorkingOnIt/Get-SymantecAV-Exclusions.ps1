@@ -1,0 +1,1 @@
+Get-ChildItem -Path Registry::HKEY_LOCAL_MACHINE\Software\WOW6432Node\Symantec\Symantec Endpoint Protection\AV\Exclusions
