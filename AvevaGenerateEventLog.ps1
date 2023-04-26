@@ -1,6 +1,6 @@
 ﻿<#
 .DESCRIPTION
-    Register an Event Source in the Applciaiton log and use it for generating warning/Error events.
+    Register an Event Source in the Application log and use it for generating warning/Error events.
     This can be used to troubleshoot Aveva System Monitor (a.k.a Sentinel) rules processing and alert delivery
 
 .USAGE    
