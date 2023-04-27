@@ -1,7 +1,9 @@
 REM    .DESCRIPTION 
-REM        Mounts the new AVEVA CDP 2023.1 ISO file 
-REM        Then copies to C:\Install Files
-REM        Lastly runs the Silent_Install_Setup.bat
+REM        Checks if CDP 2023.1 is installed:
+REM        YES = skip
+REM        NO = Remove .Net 6.08
+REM             Run the Fix-CDP-2023.ps1
+REM
 REM    .NOTES   
 REM        Name       : Fix-CDP-2023.bat
 REM        Version    : 1.0
