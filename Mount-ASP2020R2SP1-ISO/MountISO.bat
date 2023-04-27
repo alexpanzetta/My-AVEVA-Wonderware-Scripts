@@ -1,1 +1,0 @@
-powershell -Command "Start-Process -Verb RunAs powershell '-ExecutionPolicy Bypass -Command "^"" cd \\"^""C:\Tools\\OIT Scripts\\"^""; & \\"^"".\Mount-ASP2020R2SP1-ISO.ps1\\"^"" "^""'" 
