@@ -9,6 +9,8 @@ REM        Name       : Fix-CDP-2023.bat
 REM        Version    : 1.0
 REM        DateCreated: April 2023
 REM        Author: Alex.Panzetta@aveva.com
+REM
+REM        A shortcut to this batch file should be places in the user's Startup folder
 
 @off
 reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8E6D569F-7339-482E-954F-C2A5BD9A26CA} /v DisplayVersion >nul 2>&1
