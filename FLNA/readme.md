@@ -1,5 +1,5 @@
 # FLNA: Upgrade CDP 2023 to 2023.1 
-### NOTE: This fixes the OCMC lockup issue as described in Case # 960284510 by extracting all the content of the [CDP_2023.1.iso](https://softwaresupportsp.aveva.com/#/connectivityhub/details?id=e1af0884-b3c6-4d0f-a6b6-47507b398690) disk image onto a local folder on the OIT, and then it launches the <b><i>Silent_Install_Setup.bat</b></i> to upgrade the current version to <b><i>Communication Drivers Pack 2023.1</b></i>.
+### NOTE: This fixes the OCMC lockup issue as described in Case # 960284510 by extracting all the content of the [CDP_2023.1.iso](https://softwaresupportsp.aveva.com/#/connectivityhub/details?id=e1af0884-b3c6-4d0f-a6b6-47507b398690) disk image onto a local folder on the OIT, and then by launching the <b><i>Silent_Install_Setup.bat</b></i> to upgrade the current version to <b><i>Communication Drivers Pack 2023.1</b></i>.
 ---
 This workaround consists of three files:
 * [Fix-CDP-2023.ps1](Fix-CDP-2023.ps1)
