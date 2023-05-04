@@ -13,7 +13,7 @@
 #>
 
 $ComputersFile = "C:\temp\sentinel\computers.txt"
-$SentinelServer = "MCCUSFWWWGRP01"
+$SentinelServer = "SentinelServerName"
 $SentinelUser = "wwAdmin"
 $SentinelPassword = "wwAdmin"
 $RegKeyPath = 'SOFTWARE\WOW6432Node\Wonderware\Archestra\Plugins\Sentinel System Monitor\Sentinel Manager'
@@ -27,6 +27,3 @@ foreach($computer in Get-Content $ComputersFile) {
     $StoredProcedure = "EXEC uspAutoRegisterRemoteMachine '$computer','$IPAddr','$MachineIdentifier','$AgentVersion','1'"
     Invoke-Sqlcmd  -ServerInstance $SentinelServer -Database Runtime -Query $StoredProcedure -Username $SentinelUser -Password $SentinelPassword
 }
-
-
-EXEC uspAutoRegisterRemoteMachine 'LM4CTRLGR01','10.25.19.21','$MachineIdentifier','$AgentVersion','1'
